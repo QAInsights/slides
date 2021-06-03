@@ -1,6 +1,6 @@
 ---
 theme: seriph
-background: https://source.unsplash.com/collection/94734566/1920x1080
+background: https://source.unsplash.com/1600x900/?tech,dashboard,network,code
 class: text-center
 layout: cover
 ---
@@ -32,6 +32,13 @@ performance monitoring | naveenkumar | qainsights.com
 - 🔥 open source load testing tool
 - ☁ to scale your tests
 
+---
+
+# Netdata
+
+```bash 
+bash <(curl -Ss https://my-netdata.io/kickstart.sh)
+```
 
 ---
 
