@@ -5,57 +5,48 @@ class: text-center
 layout: cover
 ---
 
-# Distributed Load Testing in JMeter using Virtual Box
+# Netdata + k6
 
-simple and quick setup | naveenkumar | qainsights.com
-
-<!--
-e
--->
+performance monitoring | naveenkumar | qainsights.com
 
 ---
 
-# Distributed Load Testing
+# Netdata
 
 
-- 1️⃣ Single machine limits the load generation  
+- ⚡ one command to monitor
 
-- ⚡ Multiple machines => more threads  
+- 1️⃣ 1 second resolution
 
----
+- 📟 alerts
 
-# Distribution Mode Setup in JMeter 
+- 🖇 integrations
 
-
-- 👿 tough to setup this mode  
-
-- 🆘 end up in spending more time
-
-<img src="https://jmeter.apache.org/images/screenshots/distributed-jmeter.svg" width="500" height="500" />
+- ☁ cloud to monitor everything
 
 ---
 
-# Demo
+# k6
 
-- Virtual Box
-- CentOS
-- Install Java and JMeter
+
+- 🔥 open source load testing tool
+- ☁ to scale your tests
+
+
+---
+
+# Netdata + k6
 
 ```bash 
-
-yum install java
-curl -O https://downloads.apache.org//jmeter/binaries/apache-jmeter-5.4.1.zip
-
+k6 run --out statsd hello.js
 ```
-
-- Enable Distribution Mode
-- Run sample tests
+<img src="/youtube/netdata-k6/QAInsights-0135.jpg" width="700" height="700" align="center"/>
 
 ---
 layout: center
 class: text-center
 ---
 
-# Learn More
+# Demo
 
-[GitHub Repo](https://github.com/QAInsights/Remote-Distribution-Load-Testing-in-JMeter)
+⌛ 
