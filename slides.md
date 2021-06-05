@@ -1,53 +1,52 @@
 ---
 theme: seriph
-background: https://source.unsplash.com/1600x900/?tech,dashboard,network,code
+background: https://source.unsplash.com/1600x900/?network,code
 class: text-center
 layout: cover
 ---
 
-# Netdata + k6
+# Netdata + JMeter
 
 performance monitoring | naveenkumar | qainsights.com
 
 ---
 
-# Netdata
+# Netdata + Apache JMeter Integration
 
 
-- ⚡ one command to monitor
-
-- 1️⃣ 1 second resolution
-
-- 📟 alerts
-
-- 🖇 integrations
-
-- ☁ cloud to monitor everything
+- 📊 Prometheus
 
 ---
 
-# k6
+# Prerequisites
 
+- Prometheus
+- JMeter
+- JMeter Plugins w/ Prometheus Listener
 
-- 🔥 open source load testing tool
-- ☁ to scale your tests
 
 ---
 
-# Netdata
+# Prometheus Config
 
-```bash 
-bash <(curl -Ss https://my-netdata.io/kickstart.sh)
+```yml 
+scrape_configs:
+  # The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.
+  - job_name: 'prometheus'
+    static_configs:
+    - targets: ['localhost:9090']
+
+  - job_name: 'jmeter'
+    static_configs:
+    - targets: ['localhost:9270']
+
 ```
-
 ---
 
-# Netdata + k6
+# Execution
 
-```bash 
-k6 run --out statsd hello.js
-```
-<img src="/youtube/netdata-k6/QAInsights-0135.jpg" width="700" height="700" align="center"/>
+- Start Prometheus
+- Start JMeter
 
 ---
 layout: center
