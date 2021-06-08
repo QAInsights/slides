@@ -5,48 +5,84 @@ class: text-center
 layout: cover
 ---
 
-# Netdata + JMeter
+# Performance Engineering Series
+# Episode 01 - BuggyApp
 
-performance monitoring | naveenkumar | qainsights.com
+performance engineering | naveenkumar | qainsights.com
 
 ---
 
-# Netdata + Apache JMeter Integration
+# About this series
 
 
-- 📊 Prometheus
+- Less Performance Testing ☕
+- More Performance Engineering 🔝
+
 
 ---
 
 # Prerequisites
 
-- Prometheus
+- BuggyApp
 - JMeter
-- JMeter Plugins w/ Prometheus Listener
+- Eclipse MAT
+- VisualVM
+- JMC
+- yCrash
 
 
 ---
 
-# Prometheus Config
+# About BuggyApp 🐛
 
-```yml 
-scrape_configs:
-  # The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.
-  - job_name: 'prometheus'
-    static_configs:
-    - targets: ['localhost:9090']
+- 🐛 simple Java app to simulate various failures
+- 👩‍💻 CLI and Web app
 
-  - job_name: 'jmeter'
-    static_configs:
-    - targets: ['localhost:9270']
+---
+
+# CLI Installation 
+
+```bash
+
+git clone https://github.com/ycrash/buggyapp
+
+cd buggyapp
+
+ant clean
+
+ant dist-ee
+
+ant dist-cmd
 
 ```
+
+--- 
+
+# Web App Installation
+
+```bash
+
+buggyapp\launch.bat
+
+buggyapp\launch.sh
+
+```
+
+> launch http://localhost:9010
+
+
+
 ---
 
 # Execution
 
-- Start Prometheus
-- Start JMeter
+```java
+
+java -Xmx50m -jar buggyApp.jar PROBLEM_OOM
+
+java -jar buggyApp.jar PROBLEM_STACKOVERFLOW
+
+```
 
 ---
 layout: center
