@@ -1,88 +1,60 @@
 ---
 theme: seriph
-background: https://source.unsplash.com/1600x900/?network,code
+background: https://source.unsplash.com/1600x900/?tools
 class: text-center
 layout: cover
 ---
 
 # Performance Engineering Series
-# Episode 01 - BuggyApp
+# Episode 02 - Tools
 
-performance engineering | naveenkumar | qainsights.com
-
----
-
-# About this series
-
-
-- Less Performance Testing ☕
-- More Performance Engineering 🔝
-
+## naveenkumar ~ qainsights.com
 
 ---
 
-# Prerequisites
+# Tools Arsenal 🏹
 
-- BuggyApp
-- JMeter
 - Eclipse MAT
 - VisualVM
-- JMC
+- Java Mission Control
 - yCrash
 
 
 ---
 
-# About BuggyApp 🐛
+# Eclipse Memory Analyzer Tool (MAT)
 
-- 🐛 simple Java app to simulate various failures
-- 👩‍💻 CLI and Web app
+- Java heap analyzer tool
+- stand-alone or use it in Eclipse IDE
+- https://www.eclipse.org/mat/downloads.php
 
 ---
 
-# CLI Installation 
+# VisualVM
 
-```bash
-
-git clone https://github.com/ycrash/buggyapp
-
-cd buggyapp
-
-ant clean
-
-ant dist-ee
-
-ant dist-cmd
-
-```
+- stand-alone or use it with GraalVM
+- integrates with IDE
+- Oracle JDK 6~8. Discontinued since 9
+- https://visualvm.github.io
 
 --- 
 
-# Web App Installation
+# Java Mission Control (JMC)
 
-```bash
-
-buggyapp\launch.bat
-
-buggyapp\launch.sh
-
-```
-
-> launch http://localhost:9010
-
-
+- suite for the JVM
+- stand-alone or use it in Eclipse IDE
+- free
+- https://adoptopenjdk.net/jmc
+- https://www.oracle.com/java/technologies/javase/products-jmc8-downloads.html
 
 ---
 
-# Execution
+# yCrash
 
-```java
-
-java -Xmx50m -jar buggyApp.jar PROBLEM_OOM
-
-java -jar buggyApp.jar PROBLEM_STACKOVERFLOW
-
-```
+- Java Root Cause Analyzer
+- captures & analyzes GC Logs, thread dumps, heap dumps and more
+- free trial
+- https://ycrash.io/yc-trial.jsp
 
 ---
 layout: center
@@ -91,4 +63,4 @@ class: text-center
 
 # Demo
 
-⌛ 
+⌛
