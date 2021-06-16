@@ -6,10 +6,10 @@
     "export": "slidev export"
   },
   "dependencies": {
-    "@slidev/cli": "^0.15.0",
-    "@slidev/theme-apple-basic": "^0.14.0",
-    "@slidev/theme-default": "*",
-    "@slidev/theme-seriph": "*",
+    "@slidev/cli": "^0.20.0",
+    "@slidev/theme-apple-basic": "^0.14.1",
+    "@slidev/theme-default": "^0.19.1",
+    "@slidev/theme-seriph": "^0.19.1",
     "slidev-theme-flayyer": "^1.0.2",
     "slidev-theme-geist": "^0.4.0"
   },

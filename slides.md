@@ -1,51 +1,47 @@
 ---
 theme: seriph
-background: https://source.unsplash.com/1600x900/?coffee
+background: https://source.unsplash.com/1600x900/?trash
 class: 'text-center'
-highlighter: shiki
+layout: cover
 ---
 
 # Performance Engineering Series
-# Episode 04 - JVM Memory
+# Episode 04 - Garbage Collection 🚮
 
 ## naveenkumar ~ qainsights.com
 
 ---
 
-# mem.o.ry
+# Garbage Collection 🚮
 
-- you need memory to run any applications
-- Java has automatic memory management `garbage collector`
+- *Automatic garbage collection is the process of looking at heap memory, identifying which objects are in use and which are not, and deleting the unused objects*
+- automatic memory management
+- cleans up unreferenced objects
+- expensive process
 
----
+--- 
 
-# JVM Memory
-- Stack
-- Heap
-    - Young 🍼
-        - Eden
-        - Survivor S0
-        - Survivor S1
-    - Old 👴
-- Metaspace
+# Type of Garbage Collection
 
----
-
-# Stack
-- stores local variables
-- fast access ⚡
-- contiguous block 📦
-- Last In First Out
-- JVM argument Xss
+- Minor GC
+    - Young Generation 🐤
+- Major GC
+    - Older Generation 🐓
+- Full GC
+    - Young + Old 💯
 
 ---
 
-# Heap
-- stores object 🚗
-- size is more 🆙
-- random allocation 
-- slower 🐌
-- JVM argument Xms and Xmx
+# How GC works?
+
+- Step 1 > Marking the unreferenced objects
+- Step 2 > Sweeping the unreferened objects
+    - Compacting
+
+- Mark and Sweep process inefficient in a large heap
+
+- Minor GC - shortly lived objects
+- Major GC - long lived objects
 
 ---
 layout: center
@@ -53,3 +49,4 @@ class: text-center
 ---
 
 # Demo ⌛
+
