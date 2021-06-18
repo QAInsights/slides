@@ -1,47 +1,33 @@
 ---
 theme: seriph
-background: https://source.unsplash.com/1600x900/?trash
+background: https://source.unsplash.com/1600x900/?coffee
 class: 'text-center'
 layout: cover
 ---
 
 # Performance Engineering Series
-# Episode 04 - Garbage Collection 🚮
+# Episode 06 - Metaspace & Survivor 💝
 
 ## naveenkumar ~ qainsights.com
 
 ---
 
-# Garbage Collection 🚮
+# Metaspace
 
-- *Automatic garbage collection is the process of looking at heap memory, identifying which objects are in use and which are not, and deleting the unused objects*
-- automatic memory management
-- cleans up unreferenced objects
-- expensive process
+- `Metaspace` was known as `Permgen`
+    - class metadata
+    - `Permgen` removed in JDK 8
+    - It also leads to OOM
+- Starting JDK 8 -> `Metaspace`
+    - keep growing automatically by default
+    - keeps objects on native memory (on disk)
+    - `-XX:MaxMetaspaceSize=256m` in JMeter
 
 --- 
 
-# Type of Garbage Collection
+# Survivor 0 and 1
 
-- Minor GC
-    - Young Generation 🐤
-- Major GC
-    - Older Generation 🐓
-- Full GC
-    - Young + Old 💯
-
----
-
-# How GC works?
-
-- Step 1 > Marking the unreferenced objects
-- Step 2 > Sweeping the unreferened objects
-    - Compacting
-
-- Mark and Sweep process inefficient in a large heap
-
-- Minor GC - shortly lived objects
-- Major GC - long lived objects
+- It makes GC process efficient
 
 ---
 layout: center
