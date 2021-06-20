@@ -1,33 +1,33 @@
 ---
 theme: seriph
-background: https://source.unsplash.com/1600x900/?coffee
+background: https://source.unsplash.com/1600x900/?tools
 class: 'text-center'
 layout: cover
 ---
 
 # Performance Engineering Series
-# Episode 06 - Metaspace & Survivor 💝
+# Episode 08 - Out of Memory Analysis in yCrash
 
 ## naveenkumar ~ qainsights.com
 
 ---
 
-# Metaspace
+# yCrash
 
-- `Metaspace` was known as `Permgen`
-    - class metadata
-    - `Permgen` removed in JDK 8
-    - It also leads to OOM
-- Starting JDK 8 -> `Metaspace`
-    - keep growing automatically by default
-    - keeps objects on native memory (on disk)
-    - `-XX:MaxMetaspaceSize=256m` in JMeter
+- Root Cause Analyzer for Java
+- 14-day trial
+- captures the artifacts automatically
 
 --- 
 
-# Survivor 0 and 1
+# Getting Started with yCrash
 
-- It makes GC process efficient
+- Signup and get the license key
+- Download yCrash
+- Place your license file
+- `launch-yc-server.bat` - defaults to `8085`
+- yCrash runs on your machine
+
 
 ---
 layout: center
