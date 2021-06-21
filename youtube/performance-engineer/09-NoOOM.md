@@ -6,7 +6,7 @@ layout: cover
 ---
 
 # Performance Engineering Series
-# Episode 10 - Memory Leak Analysis
+# Episode 09 - Memory Leak Analysis
 
 ## naveenkumar ~ qainsights.com
 
