@@ -6,22 +6,29 @@ layout: cover
 ---
 
 # Performance Engineering Series
-# Episode 10 - Memory Leak Analysis
+# Episode 10 - DeadLock 🔐
 
 ## naveenkumar ~ qainsights.com
 
 ---
 
-# What is Memory Leak? ♒
+# What is Deadlock? 😐🔒
 
-- incorrect management of memory
-- doesn't release the memory that is no longer needed
+- *describes a situation where two or more threads are blocked forever, waiting for each other.*
 
 --- 
 
 # BuggyApp 🐛
 
-- `java -Xmx256m -jar .\buggyApp.jar PROBLEM_MEMORY`
+> `java -Xmx256m -jar .\buggyApp.jar PROBLEM_DEADLOCK`
+
+- two threads: `ThreadA` and `ThreadB`
+
+- `ThreadA` acquires the lock on the resource `foo`, `sleeps` and then trying to acquire `bar`
+- `ThreadB` acquires the lock on the resource `bar`, `sleeps` and then trying to acquire `foo`
+    - *deadlock*
+
+- put the 🔒 lock using `synchronized`
 
 
 ---
