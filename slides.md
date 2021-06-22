@@ -1,36 +1,52 @@
 ---
 theme: seriph
-background: https://source.unsplash.com/1600x900/?tools
+background: https://source.unsplash.com/1600x900/?code
 class: 'text-center'
 layout: cover
 ---
 
-# Performance Engineering Series
-# Episode 10 - DeadLock 🔐
+# Learn JMeter Series - #65
+# Running JMeter Tests using GitHub Actions
 
 ## naveenkumar ~ qainsights.com
 
 ---
 
-# What is Deadlock? 😐🔒
+# What is GitHub Actions? ⚡
 
-- *describes a situation where two or more threads are blocked forever, waiting for each other.*
+- *automate all your software workflows, now with world-class CI/CD*
+- Build, Test, and Deploy using GitHub Actions
 
 --- 
 
-# BuggyApp 🐛
+# PerfAction 
 
-> `java -Xmx256m -jar .\buggyApp.jar PROBLEM_DEADLOCK`
+- is a `GitHub Action` helps to automate performance testing using Apache JMeter and its plugins
+- `free` and `open-source`
+- https://github.com/marketplace/actions/perfaction-for-jmeter
 
-- two threads: `ThreadA` and `ThreadB`
+---
 
-- `ThreadA` acquires the lock on the resource `foo`, `sleeps` and then trying to acquire `bar`
-- `ThreadB` acquires the lock on the resource `bar`, `sleeps` and then trying to acquire `foo`
-    - *deadlock*
+# How it works?
 
-- put the 🔒 lock using `synchronized`
+- Create a repo
+- Add an action
+- Trigger it
 
+```yaml
+---
+- name: JMeter Test
+  uses: QAInsights/PerfAction@v2.0
+  with:
+    test-plan-path: ./TestPlans/S01_SimpleExample/S01_SimpleExample.jmx
+    args: ""
 
+- name: Upload Results
+  uses: actions/upload-artifact@v2
+  with:
+    name: jmeter-results
+    path: result.jtl
+```
 ---
 layout: center
 class: text-center
