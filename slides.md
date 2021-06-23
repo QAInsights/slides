@@ -5,48 +5,30 @@ class: 'text-center'
 layout: cover
 ---
 
-# Learn JMeter Series - #65
-# Running JMeter Tests using GitHub Actions
-
+# Performance Engineering Series
+# Episode 11 - Glowroot 🌴
 ## naveenkumar ~ qainsights.com
 
 ---
 
-# What is GitHub Actions? ⚡
+# What is Glowroot? 🌳
 
-- *automate all your software workflows, now with world-class CI/CD*
-- Build, Test, and Deploy using GitHub Actions
+- open source Java APM
+- quick start and low overhead
 
 --- 
 
-# PerfAction 
+# Prerequisites 
 
-- is a `GitHub Action` helps to automate performance testing using Apache JMeter and its plugins
-- `free` and `open-source`
-- https://github.com/marketplace/actions/perfaction-for-jmeter
+- Jetty - web server
+- Glowroot
 
----
-
-# How it works?
-
-- Create a repo
-- Add an action
-- Trigger it
-
-```yaml
----
-- name: JMeter Test
-  uses: QAInsights/PerfAction@v2.0
-  with:
-    test-plan-path: ./TestPlans/S01_SimpleExample/S01_SimpleExample.jmx
-    args: ""
-
-- name: Upload Results
-  uses: actions/upload-artifact@v2
-  with:
-    name: jmeter-results
-    path: result.jtl
+```bash
+java -javaagent:C:\glowroot-0.13.6-dist\glowroot\glowroot.jar -jar ..\start.jar
 ```
+- JMeter Test Plan
+- ☕
+
 ---
 layout: center
 class: text-center
