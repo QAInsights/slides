@@ -6,28 +6,33 @@ layout: cover
 ---
 
 # Performance Engineering Series
-# Episode 11 - Glowroot 🌴
+# Episode 12 - Stack Overflow 📚
 ## naveenkumar ~ qainsights.com
 
 ---
 
-# What is Glowroot? 🌳
+# What is Stack Overflow? 📚
 
-- open source Java APM
-- quick start and low overhead
+- it happens when the JVM exceeds the stack memory
+- e.g. recursive call
+
+```groovy
+callthis();
+
+def callthis() {
+		
+  callthis();
+
+}
+```
 
 --- 
 
-# Prerequisites 
-
-- Jetty - web server
-- Glowroot
+# BuggyApp 🐛 
 
 ```bash
-java -javaagent:C:\glowroot-0.13.6-dist\glowroot\glowroot.jar -jar ..\start.jar
+java -Xss180k -jar .\buggyApp.jar PROBLEM_STACKOVERFLOW
 ```
-- JMeter Test Plan
-- ☕
 
 ---
 layout: center
