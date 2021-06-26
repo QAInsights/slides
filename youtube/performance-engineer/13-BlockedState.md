@@ -6,21 +6,21 @@ layout: cover
 ---
 
 # Performance Engineering Series
-# Episode 14 - Heavy IO 📈
+# Episode 13 - Blocked 🟥
 ## naveenkumar ~ qainsights.com
 
 ---
 
-# Heavy IO 📈
+# Blocked Threads 🟥
 
-- prolonged threads in RUNNING state leads to high CPU utilization
+- prolonged threads in BLOCKED state leads to unresponsive
 
 --- 
 
 # BuggyApp 🐛 
 
 ```bash
-java -jar .\buggyApp.jar PROBLEM_IO
+java -jar .\buggyApp.jar PROBLEM_BLOCKED
 ```
 
 ---

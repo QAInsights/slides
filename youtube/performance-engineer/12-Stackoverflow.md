@@ -6,21 +6,32 @@ layout: cover
 ---
 
 # Performance Engineering Series
-# Episode 14 - Heavy IO 📈
+# Episode 12 - Stack Overflow 📚
 ## naveenkumar ~ qainsights.com
 
 ---
 
-# Heavy IO 📈
+# What is Stack Overflow? 📚
 
-- prolonged threads in RUNNING state leads to high CPU utilization
+- it happens when the JVM exceeds the stack memory
+- e.g. recursive call
+
+```groovy
+callthis();
+
+def callthis() {
+		
+  callthis();
+
+}
+```
 
 --- 
 
 # BuggyApp 🐛 
 
 ```bash
-java -jar .\buggyApp.jar PROBLEM_IO
+java -Xss180k -jar .\buggyApp.jar PROBLEM_STACKOVERFLOW
 ```
 
 ---
