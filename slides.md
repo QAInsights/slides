@@ -5,23 +5,48 @@ class: 'text-center'
 layout: cover
 ---
 
-# Performance Engineering Series
-# Episode 14 - Heavy IO 📈
+# Learn JMeter Series - #66
+# Running JMeter Tests using Maven
 ## naveenkumar ~ qainsights.com
 
 ---
 
-# Heavy IO 📈
+# Maven 🌀
 
-- prolonged threads in RUNNING state leads to high CPU utilization
+- software project management and comprehension tool
+- project's build, reporting and documentation
+- based on POM 
+- https://maven.apache.org
 
 --- 
 
-# BuggyApp 🐛 
+# Maven Plugin for JMeter 🧪
 
-```bash
-java -jar .\buggyApp.jar PROBLEM_IO
+- https://github.com/jmeter-maven-plugin/jmeter-maven-plugin
+```xml
+<plugin>
+    <groupId>com.lazerycode.jmeter</groupId>
+    <artifactId>jmeter-maven-plugin</artifactId>
+    <version>3.4.0</version>
+    <executions>
+        <!-- Generate JMeter configuration -->
+        <execution>
+            <id>configuration</id>
+            <goals>
+                <goal>configure</goal>
+            </goals>
+        </execution>
+       ...
+    </executions>
+</plugin>
 ```
+---
+
+# Steps 🔢
+
+- Add the plugin in `pom.xml`
+- Place your JMeter test plan and its dependencies
+- Run the test `mvn clean verify`
 
 ---
 layout: center

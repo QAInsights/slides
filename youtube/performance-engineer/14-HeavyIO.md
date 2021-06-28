@@ -6,7 +6,7 @@ layout: cover
 ---
 
 # Performance Engineering Series
-# Episode 14 - CPU 📈
+# Episode 14 - Heavy IO 📈
 ## naveenkumar ~ qainsights.com
 
 ---
