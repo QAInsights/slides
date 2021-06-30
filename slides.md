@@ -5,48 +5,44 @@ class: 'text-center'
 layout: cover
 ---
 
-# Learn JMeter Series - #66
-# Running JMeter Tests using Maven
+# Performance Engineering Series
+# Episode 15 - jmap and JCmd 📈
 ## naveenkumar ~ qainsights.com
 
 ---
 
-# Maven 🌀
+# jmap 📈
 
-- software project management and comprehension tool
-- project's build, reporting and documentation
-- based on POM 
-- https://maven.apache.org
+- prints shared object memory maps or heap memory details of a given process or core file or a remote debug server
+- `jmap`
+- packaged with JDK
 
 --- 
 
-# Maven Plugin for JMeter 🧪
+# jmap commands ⏩
 
-- https://github.com/jmeter-maven-plugin/jmeter-maven-plugin
-```xml
-<plugin>
-    <groupId>com.lazerycode.jmeter</groupId>
-    <artifactId>jmeter-maven-plugin</artifactId>
-    <version>3.4.0</version>
-    <executions>
-        <!-- Generate JMeter configuration -->
-        <execution>
-            <id>configuration</id>
-            <goals>
-                <goal>configure</goal>
-            </goals>
-        </execution>
-       ...
-    </executions>
-</plugin>
-```
+- `jmap -h`
+- `jmap -dump:format=b,file=dumphere.hrof <pid>`
+- `jmap -dump:live,format=b,file=dumphere <pid>`
+- `jmap -histo:live <pid>`
+- `jmap -finalizerinfo <pid>`
+- `jmap -clstats <pid>`
+
 ---
 
-# Steps 🔢
+# JCmd
 
-- Add the plugin in `pom.xml`
-- Place your JMeter test plan and its dependencies
-- Run the test `mvn clean verify`
+- utility is used to send diagnostic command requests to the JVM
+- must be used on the same machine where the JVM is running
+
+---
+
+# JCmd commands 🌌
+
+- `jcmd -h`
+- `jcmd <pid>`
+- `jmcd <pid> VM.version`
+- `jcmd <pid> GC.heap_dump here`
 
 ---
 layout: center
