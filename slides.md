@@ -6,43 +6,53 @@ layout: cover
 ---
 
 # Performance Engineering Series
-# Episode 15 - jmap and JCmd 📈
+# Episode 16 - JStack, JPS & JInfo
 ## naveenkumar ~ qainsights.com
 
 ---
 
-# jmap 📈
+# JStack 🛠
 
-- prints shared object memory maps or heap memory details of a given process or core file or a remote debug server
-- `jmap`
-- packaged with JDK
+- attaches to the specified process or core file and prints the stack traces of all threads
+- `jstack`
 
 --- 
 
-# jmap commands ⏩
+# JStack commands 🛠
 
-- `jmap -h`
-- `jmap -dump:format=b,file=dumphere.hrof <pid>`
-- `jmap -dump:live,format=b,file=dumphere <pid>`
-- `jmap -histo:live <pid>`
-- `jmap -finalizerinfo <pid>`
-- `jmap -clstats <pid>`
+- `jstack -h`
+- `jstack -l <pid>`
+- `jstack -e <pid>`
 
 ---
 
-# JCmd
+# Java VM Process Status (JPS) 🔎
 
-- utility is used to send diagnostic command requests to the JVM
-- must be used on the same machine where the JVM is running
+- tool lists the instrumented JVMs on the target system
 
 ---
 
-# JCmd commands 🌌
+# JPS commands 🌌
 
-- `jcmd -h`
-- `jcmd <pid>`
-- `jmcd <pid> VM.version`
-- `jcmd <pid> GC.heap_dump here`
+- `jps -h`
+- `jps -l`
+- `jps -m`
+- `jps -v`
+
+---
+
+# JInfo 🔎
+
+- prints Java configuration information for a specified Java process or core file or a remote debug server
+- `jinfo`
+
+---
+
+# JInfo commands 🌌
+
+- `jinfo -h`
+- `jinfo -flags <pid>`
+- `jinfo -sysprops <pid>`
 
 ---
 layout: center
@@ -50,4 +60,3 @@ class: text-center
 ---
 
 # Demo ⌛
-
