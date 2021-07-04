@@ -5,54 +5,40 @@ class: 'text-center'
 layout: cover
 ---
 
-# Performance Engineering Series
-# Episode 16 - JStack, JPS & JInfo
+# APM & Observability Series
+# Episode 01 - SigNoz 🔥
 ## naveenkumar ~ qainsights.com
 
 ---
 
-# JStack 🛠
+# SigNoz 📊
 
-- attaches to the specified process or core file and prints the stack traces of all threads
-- `jstack`
+- observability platform  
+- open source alternative  
+- native support for OpenTelemetry
+- Golang & React-Typescript
 
 --- 
 
-# JStack commands 🛠
+# Installation 🗜
 
-- `jstack -h`
-- `jstack -l <pid>`
-- `jstack -e <pid>`
-
----
-
-# Java VM Process Status (JPS) 🔎
-
-- tool lists the instrumented JVMs on the target system
+- https://github.com/SigNoz/signoz
+- Using Docker or Helm
+- `git clone https://github.com/SigNoz/signoz.git && cd signoz/deploy/`
 
 ---
 
-# JPS commands 🌌
+# Performance Testing ⚡
 
-- `jps -h`
-- `jps -l`
-- `jps -m`
-- `jps -v`
+```bash
+kubectl -n sample-application run strzal --image=djbingham/curl --restart='OnFailure' -i --tty --rm --command 
+-- curl -X POST -F 'locust_count=6' -F 'hatch_rate=2' http://locust-master:8089/swarm
+```
 
----
-
-# JInfo 🔎
-
-- prints Java configuration information for a specified Java process or core file or a remote debug server
-- `jinfo`
-
----
-
-# JInfo commands 🌌
-
-- `jinfo -h`
-- `jinfo -flags <pid>`
-- `jinfo -sysprops <pid>`
+```bash
+kubectl -n sample-application run strzal --image=djbingham/curl --restart='OnFailure' -i --tty --rm --command 
+-- curl http://locust-master:8089/stop
+```
 
 ---
 layout: center
