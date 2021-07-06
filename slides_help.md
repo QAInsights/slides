@@ -324,3 +324,14 @@ class: text-center
 # Learn More
 
 [Documentations](https://sli.dev) / [GitHub Repo](https://github.com/slidevjs/slidev)
+
+---
+
+# Test
+
+[test](example.com)
+[tester](test)
+**test**
+_tezt_
+
+tester

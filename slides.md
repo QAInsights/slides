@@ -5,40 +5,35 @@ class: 'text-center'
 layout: cover
 ---
 
-# APM & Observability Series
-# Episode 01 - SigNoz 🔥
+# Performance Engineering Series
+# Episode 18 - Deep-dive into yCrash
 ## naveenkumar ~ qainsights.com
 
 ---
 
-# SigNoz 📊
+# yCrash 🛠  
 
-- observability platform  
-- open source alternative  
-- native support for OpenTelemetry
-- Golang & React-Typescript
+- Java RCA solution
+- works locally
+- captures critical artifacts to find the root cause
 
 --- 
 
-# Installation 🗜
+# Getting Started with yCrash
 
-- https://github.com/SigNoz/signoz
-- Using Docker or Helm
-- `git clone https://github.com/SigNoz/signoz.git && cd signoz/deploy/`
+- sign up for free trial
+- download the latest version of yCrash
+- configure the agent with the license file
+- start the agent
 
----
+--- 
 
-# Performance Testing ⚡
+# yCrash artifacts
 
-```bash
-kubectl -n sample-application run strzal --image=djbingham/curl --restart='OnFailure' -i --tty --rm --command 
--- curl -X POST -F 'locust_count=6' -F 'hatch_rate=2' http://locust-master:8089/swarm
-```
-
-```bash
-kubectl -n sample-application run strzal --image=djbingham/curl --restart='OnFailure' -i --tty --rm --command 
--- curl http://locust-master:8089/stop
-```
+- GC log
+- Thread dump
+- Heap dump
+- netstat, vmstat, disk usage, iostat and more
 
 ---
 layout: center
