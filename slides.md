@@ -6,34 +6,26 @@ layout: cover
 ---
 
 # Performance Engineering Series
-# Episode 18 - Deep-dive into yCrash
+# Episode 19 - Understanding Flame Graphs 🔥 in yCrash
 ## naveenkumar ~ qainsights.com
 
 ---
 
-# yCrash 🛠  
+# What is Flame Graph 🟪🟩🟦?  
 
-- Java RCA solution
-- works locally
-- captures critical artifacts to find the root cause
-
---- 
-
-# Getting Started with yCrash
-
-- sign up for free trial
-- download the latest version of yCrash
-- configure the agent with the license file
-- start the agent
+- Invented by Brendan Gregg  
+- "are a visualization of profiled software, allowing the most frequent code-paths to be identified quickly and accurately"  
 
 --- 
 
-# yCrash artifacts
+# How to read Flame Graphs?
 
-- GC log
-- Thread dump
-- Heap dump
-- netstat, vmstat, disk usage, iostat and more
+- x-axis -> profile population, sorted alphabetically
+- y-axis -> stack depth starting from zero
+- each rectangle -> stack frame; wider the frame, more often in the stacks
+- colors are _random_
+- https://github.com/brendangregg/FlameGraph
+
 
 ---
 layout: center
