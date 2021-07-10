@@ -5,8 +5,10 @@ class: 'text-center'
 layout: cover
 ---
 
-# APM & Observability Series
-# Episode 01 - SigNoz 🔥
+# APM & Observability Series  
+
+# Episode 01 - SigNoz 🔥  
+
 ## naveenkumar ~ qainsights.com
 
 ---
