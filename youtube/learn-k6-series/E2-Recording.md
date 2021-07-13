@@ -1,6 +1,6 @@
 ---
 theme: seriph
-background: https://source.unsplash.com/1600x900/?tech,dashboard,network,code
+background: https://source.unsplash.com/1600x900/?javascript,code
 class: text-center
 layout: cover
 ---
@@ -9,48 +9,19 @@ layout: cover
 
 # E2 - Recording in k6  
 
-performance monitoring | naveenkumar | qainsights.com
+## naveenkumar | qainsights.com
 
 ---
 
-# Netdata
+# Recorder ▶
 
 
-- ⚡ one command to monitor
+- ⏺ k6 browser extensions available for Chrome and Firefox
+- ☁ powered by k6 Cloud  
 
-- 1️⃣ 1 second resolution
-
-- 📟 alerts
-
-- 🖇 integrations
-
-- ☁ cloud to monitor everything
-
----
-
-# k6
-
-
-- 🔥 open source load testing tool
-- ☁ to scale your tests
-
----
-
-# Netdata
-
-```bash 
-bash <(curl -Ss https://my-netdata.io/kickstart.sh)
-```
-
----
-
-# Netdata + k6
-
-```bash 
-k6 run --out statsd hello.js
-```
-<img src="/youtube/netdata-k6/QAInsights-0135.jpg" width="700" height="700" align="center"/>
-
+<p align="center">
+<img src="/youtube/learn-k6-series/QAInsights-0191.jpg" width="250" height="250" />
+</p>
 ---
 layout: center
 class: text-center
