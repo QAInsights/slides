@@ -33,7 +33,7 @@ layout: cover
 
 # How SharedArray works? 🔢
 
-- `array-like` object
+- `array-like` object 
 - takes `name` and `function`
 - readOnly constructor, not possible to communicate between VUs
 - `length`, `array[0]`, `for`
