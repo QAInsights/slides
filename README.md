@@ -8,4 +8,7 @@ To start the slide show:
 
 Edit the [slides.md](./slides.md) to see the changes.
 
+# Upgrade Slidev
 
+`cd into slidev`  
+`npx taze major -wi`  
