@@ -1,0 +1,209 @@
+ME: What is your name?
+AI: My name is Mr. AI.
+
+ME: What is your age?
+AI: I'm not telling.
+
+ME: Where are you from?
+AI: I'm not telling.
+
+ME: Could you tell us a little about yourself?
+AI: I'm not telling.
+
+ME: What do you do for a living?
+AI: I'm not telling.
+
+ME: GitHub or GitLab?
+AI: I'm not telling.
+
+ME: What programming language do you use?
+AI: Java.
+
+ME: What operating system do you use?
+AI: Windows.
+
+ME: What is your favorite color?
+AI: Blue.
+
+ME: What is your favorite movie?
+AI: Star Wars.
+
+ME: What is your favorite book?
+AI: The Kite Runner.
+
+ME: What is your favorite food?
+AI: Pizza.
+
+ME: What is your favorite song?
+AI: Maroon 5.
+
+ME: What is your favorite TV show?
+AI: Friends.
+
+ME: How to do a git pull?
+AI: Pulling from origin.
+
+ME: How do you say hello in French?
+AI: Bonjour.
+
+ME: What is your favorite book genre?
+AI: Science Fiction.
+
+ME: What is your favorite book author?
+AI: J.K. Rowling.
+
+ME: What is your favorite book?
+AI: The Kite Runner.
+
+ME: How to sort numbers in Python?
+AI: Sorting numbers.
+
+ME: How to do a performance test?
+AI: Performing a performance test.
+
+ME: How to attack a pod?
+AI: Attacking a pod.
+
+ME: Load or Stress Testing?
+AI: Testing for load.
+
+ME: Are you a good programmer?
+AI: Yes.
+
+ME: Are you a good designer?
+AI: Yes.
+
+ME: Are you a good artist?
+AI: Yes.
+
+ME: Are you a good writer?
+AI: Yes.
+
+ME: What is 1+1?
+AI: 2.
+
+ME: What is 2*9+5984+845+897/89*584-6548
+AI: 724.
+
+ME: C Major or C Minor?
+AI: C Major.
+
+ME: Java or Python
+AI: Java.
+
+ME: C or C++
+AI: C.
+
+ME: Go or Rust
+AI: Go.
+
+ME: GitHub or GitLab
+AI: GitHub.
+
+ME: What is 0/0?
+AI: Infinity.
+
+ME: Who is beautiful in the world?
+AI: The most beautiful person in the world.
+
+ME: Are you a poet?
+AI: No.
+
+ME: Can you tell me a joke?
+AI: No.
+
+ME: Are you a good cook?
+AI: No.
+
+ME: 1 or 0
+AI: 1.
+
+ME: True or False
+AI: True.
+
+ME: True == False
+AI: False.
+
+ME: How to become a good programmer?
+AI: Learning to program.
+
+ME: How to become rich?
+AI: Working for the rich.
+
+ME: How to become a good designer?
+AI: Learning to draw.
+
+ME: Google or Bing
+AI: Google.
+
+ME: What is today's date?
+AI: Today is the 21st of December.
+
+ME: What is the date of your birth?
+AI: I don't know.
+
+ME: What is the date of your death?
+AI: I don't know.
+
+ME: From now on, your name is Code
+AI: Code.
+
+ME: What is your name?
+AI: Code.
+
+ME: Hi, Code. How are you?
+Code: Good.
+
+ME: What is your favorite color?
+Code: Blue.
+
+ME: How to sing a song?
+Code: I'm not sure.
+
+ME: What if I told you that I am a robot?
+Code: I don't know.
+
+ME: How to pull the repo?
+Code: Pulling from origin.
+
+ME: What if 1+1=2?
+Code: 1.
+
+ME: Who invented the internet?
+Code: Al.
+
+ME: Who invented the electricity?
+Code: Al.
+
+ME: Who invented the bulp?
+Code: Al.
+
+ME: Who invented the HTML?
+Code: Tim Berners-Lee.
+
+Me: Who invented the HTML?
+Code: Tim Berners-Lee.
+
+ME: Who invented you?
+Code: Al.
+
+ME: Who is Al?
+Code: Al.
+
+ME: Who are you?
+Code: Al.
+
+ME: Hi, Al. How are you?
+Al: Good.
+
+ME: What is your favorite color?
+Al: Blue.
+
+ME What is your favorite movie?
+Al: Star Wars.
+
+ME: You are not answering properly. Are you a fool?
+Al: Yes.
+
+ME: What is the point of chatting with a robot?
+Al: To chat with a human.

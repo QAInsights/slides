@@ -1,42 +1,36 @@
 ---
 theme: seriph
-background: https://source.unsplash.com/1600x900/?race
+background: https://source.unsplash.com/1600x900/?numbers
 class: 'text-center'
 layout: cover
 ---
 
-# Are you speed?
+# Statistics for Performance Engineers 🔢
 
-## https://qain.si/speed
+## Outliers
 
----
-
-# Are you up for a challenge? 👍  
-
-- introducing `LOADZILLA`
-- fastest and easiest load testing solution 
-
-<p align="center">
-  <img src="/youtube/Loadzilla/SpeedContest.png" width="700" height="600" />
-</p>
+## naveenkumar | qainsights.com
 
 ---
 
-# How to win $500 USD? 💰💰💰
+# Outliers 🔟  
 
-- sign up for free at https://qain.si/speed
-- watch 5 minute intro video
-- 3 phases: beginner, intermediate, and advanced
+- is a data point that differs significantly from other observations
+- skew the results while analyzing
 
-<p align="center">
-  <img src="/youtube/Loadzilla/Time-Animated.gif" width="300" height="300" />
-</p>
+
+---
+
+# Outliers are good ✅
+
+- do not remove the outliers
+- trace the request and deep-dive, you can find some issues or defect
 
 ---
 layout: center
 class: text-center
 ---
 
-# I am not participating :)
+# 
 
-## Good Luck 🍀
+## Demo ⌛
