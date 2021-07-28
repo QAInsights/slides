@@ -7,24 +7,18 @@ layout: cover
 
 # Statistics for Performance Engineers 🔢
 
-## Outliers
+# E3 - Histogram
 
 ## naveenkumar | qainsights.com
 
 ---
 
-# Outliers 🔟  
+# Histogram 📦
 
-- is a data point that differs significantly from other observations
-- skew the results while analyzing
+- approximate representation of the distribution of numerical data
+- e.g. how many users facing the response time < 300ms
+- e.g. how many transactions are failing with > 1000ms
 
-
----
-
-# Outliers are good ✅
-
-- do not remove the outliers
-- trace the request and deep-dive, you can find some issues or defect
 
 ---
 layout: center
