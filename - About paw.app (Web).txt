@@ -1,0 +1,13 @@
+- About paw.app (Web)
+- Creating a project
+
+- Creating an environment/group
+default group is Production
+- Sending a GET request 
+- Previewing requests
+- Validating the response
+- Sending POST, PUT, PATCH, DELETE requests
+- GraphQL Demo
+- Auth Demo
+- About Extensions
+- Managing Extensions
