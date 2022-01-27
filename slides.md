@@ -12,7 +12,7 @@ layout: cover
 
 # Infrastructure as Code (IaC) 🏗 
 
-- helps to build, change, and version infrastructure safely and efficiently.
+- helps to build, change, and version infrastructure safely and efficiently
 
 ---
 
@@ -46,7 +46,7 @@ layout: cover
     - spins up an EC2 instance
     - `t2.small` - NOT FREE TIER
     - install Java, JMeter, and JMeter Plugins
-    
+
 <br> 
 
 ```
