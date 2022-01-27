@@ -5,43 +5,58 @@ class: 'text-center'
 layout: cover
 ---
 
-# Get Certified in 
-
-# Gremlin Chaos Engineering Professional
-
+# Deploy JMeter on AWS using Terraform
 ## naveenkumar ~ qainsights.com
 
 ---
 
-# Gremlin 🐒  
+# Infrastructure as Code (IaC) 🏗 
 
-- leading chaos engineering platform
-- chaos experiments 
-- break things on purpose to understand how your app works
+- helps to build, change, and version infrastructure safely and efficiently.
 
 ---
 
-# Certification 🎓
+# Terraform ☘    
 
-- Gremlin® Certified Chaos Engineer (Basics)
-- Gremlin® Certified Chaos Engineering Professional (Advanced)
-- one lucky winner get $200 Amazon gift card from first 500 certified professionals
+- open-source infrastructure as code software tool that provides a consistent CLI workflow to manage hundreds of cloud services. 
+- three flavors: CLI, Cloud, and Enterprise
+- Write, Plan, and Apply
 
 --- 
 
-# Points to know ✅
+# Prerequisites ✅
 
-- free certification
-- free retries
-- free course material w/ videos, hands-on, and graphics
+- Terraform CLI
+- AWS CLI
+- AWS IAM
 ---
 
-# How to prepare? 📚
+# AWS Setup 🏁
 
-- Complete the course
-- Read the Gremlin documentation
-- Read the Gremlin blog
-- Hands-on with Gremlin
+- AWS Key Pair
+- IAM User
+- AWS CLI Configuration
+
+---
+
+# Terraform ✍
+
+- Terraform module for JMeter
+    - https://registry.terraform.io/modules/QAInsights/jmeter/aws/latest
+    - spins up an EC2 instance
+    - `t2.small` - NOT FREE TIER
+    - install Java, JMeter, and JMeter Plugins
+    
+<br> 
+
+```
+terraform init
+terraform plan
+terraform apply
+```
+```
+terraform destroy
+```
 
 ---
 layout: center
