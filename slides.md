@@ -4,58 +4,50 @@ background: https://source.unsplash.com/1600x900/?code
 class: 'text-center'
 layout: cover
 ---
+<center>
+<img src="/assets/qainsights_logo.png" width=200 height=200 />
+</center>
 
-# Deploy JMeter on AWS using Terraform
+# Create JMeter Golden Image using Packer on AWS
 ## naveenkumar ~ qainsights.com
 
 ---
 
-# Infrastructure as Code (IaC) 🏗 
+# Golden Image 🥇
 
-- helps to build, change, and version infrastructure safely and efficiently
+- template for a Virtual Machine, server, desktop
+- software, libraries, and configuration
+- other names: master image, clone image etc.
 
 ---
 
-# Terraform ☘    
+# Packer 📦    
 
-- open-source infrastructure as code software tool that provides a consistent CLI workflow to manage hundreds of cloud services. 
-- three flavors: CLI, Cloud, and Enterprise
-- Write, Plan, and Apply
+- open source tool from HashiCorp 
+- enables you to create identical machine images for multiple platforms from a single source template
+- enables colloboration with other teams: security, QA, etc.
 
 --- 
 
 # Prerequisites ✅
 
-- Terraform CLI
+- Packer CLI
 - AWS CLI
-- AWS IAM
----
-
-# AWS Setup 🏁
-
-- AWS Key Pair
-- IAM User
-- AWS CLI Configuration
 
 ---
 
-# Terraform ✍
-
-- Terraform module for JMeter
-    - https://registry.terraform.io/modules/QAInsights/jmeter/aws/latest
-    - spins up an EC2 instance
-    - `t2.small` - NOT FREE TIER
-    - install Java, JMeter, and JMeter Plugins
-
-<br> 
+# Packer ✍
 
 ```
-terraform init
-terraform plan
-terraform apply
-```
-```
-terraform destroy
+
+git clone https://github.com/QAInsights/Packer-JMeter.git  
+
+
+cd Packer-JMeter\file or   
+cd Packer-JMeter\shell
+
+
+packer build .
 ```
 
 ---
@@ -64,3 +56,5 @@ class: text-center
 ---
 
 # ⌛
+
+---
