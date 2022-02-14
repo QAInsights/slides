@@ -1,60 +1,69 @@
 ---
 theme: seriph
-background: https://source.unsplash.com/1600x900/?code
-class: 'text-center'
+background: https://source.unsplash.com/1600x900/?javascript,code
+class: text-center
 layout: cover
 ---
-<center>
-<img src="/assets/qainsights_logo.png" width=200 height=200 />
-</center>
 
-# Create JMeter Golden Image using Packer on AWS
-## naveenkumar ~ qainsights.com
+# Learn k6 Series
 
----
+# E7 - Scenarios and Executors 🏃‍♀️
 
-# Golden Image 🥇
-
-- template for a Virtual Machine, server, desktop
-- software, libraries, and configuration
-- other names: master image, clone image etc.
+## naveenkumar | qainsights.com
 
 ---
 
-# Packer 📦    
+# Scenarios 📦
 
-- open source tool from HashiCorp 
-- enables you to create identical machine images for multiple platforms from a single source template
-- enables colloboration with other teams: security, QA, etc.
 
---- 
-
-# Prerequisites ✅
-
-- Packer CLI
-- AWS CLI
+- available since 0.27.0
+- advanced configuration for the VUs and iterations
+- parallel or sequential execution or both
+- multiple scenarios
 
 ---
 
-# Packer ✍
+# How to ❔
 
+- leverages the `options` object
+
+```javascript
+export const options = {
+  scenarios: {
+    my_scenario: {
+      executor: 'shared-iterations',
+      startTime: '10s',
+      gracefulStop: '5s',
+      vus: 10,
+      iterations: 2,
+      maxDuration: '10s',
+    },
+    my_another_scenario: {
+      /*...*/
+    },
+  },
+};
 ```
+---
 
-git clone https://github.com/QAInsights/Packer-JMeter.git  
+# Executors 🚀
 
+- work engines 🏇
 
-cd Packer-JMeter\file or   
-cd Packer-JMeter\shell
+- `shared-iterations`
+- `per-vu-iterations`
+- `constant-vus`
+- `ramping-vus`
+- `constant-arrival-rate`
+- `ramping-arrival-rate`
+- `externally-controlled`
 
-
-packer build .
-```
 
 ---
 layout: center
 class: text-center
 ---
 
-# ⌛
+# 
 
----
+# Demo ⌛ 
