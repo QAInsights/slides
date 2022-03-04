@@ -7,56 +7,39 @@ layout: cover
 
 # Learn k6 Series
 
-# E7 - Scenarios and Executors 🏃‍♀️
+# E8 - Metrics and Result Output 📊
 
 ## naveenkumar | qainsights.com
 
 ---
 
-# Scenarios 📦
+# Metrics 📈
 
 
-- available since 0.27.0
-- advanced configuration for the VUs and iterations
-- parallel or sequential execution or both
-- multiple scenarios
+- built-in and custom metrics
+- `vus`, `vus_max`, `iterations`, and more
+- `http_req_...` and more
 
 ---
 
-# How to ❔
+# Custom Metrics 📊 
 
-- leverages the `options` object
+- four types of metrics
+- `counter`, `gauge`, `rate`, and `trend`
 
 ```javascript
-export const options = {
-  scenarios: {
-    my_scenario: {
-      executor: 'shared-iterations',
-      startTime: '10s',
-      gracefulStop: '5s',
-      vus: 10,
-      iterations: 2,
-      maxDuration: '10s',
-    },
-    my_another_scenario: {
-      /*...*/
-    },
-  },
-};
+import { Counter, Gauge, Rate, Trend } from "k6/metrics";
+
+const myMetric = new(<metric_type>);
+myMetric.add(<value>);
+
 ```
 ---
 
-# Executors 🚀
+# Result Output ☁
 
-- work engines 🏇
-
-- `shared-iterations`
-- `per-vu-iterations`
-- `constant-vus`
-- `ramping-vus`
-- `constant-arrival-rate`
-- `ramping-arrival-rate`
-- `externally-controlled`
+- k6 supports streaming results to a variety of output formats
+- CSV, JSON, k6 Cloud, Grafana Cloud, AWS Cloud Watch, InfluxDB, and more
 
 
 ---
