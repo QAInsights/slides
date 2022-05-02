@@ -3,69 +3,71 @@ theme: seriph
 background: https://source.unsplash.com/1600x900/?code
 class: 'text-center'
 layout: cover
+lineNumbers: true
+monaco: 'dev'
 ---
 <center>
 <img src="/assets/qainsights_logo.png" width=200 height=200 />
 </center>
 
-# 73 - mTLS in JMeter
-# w/ nginx and flask demo
+# 76 - Getting Started with JMeter DSL
 ## naveenkumar ~ qainsights.com
 
 ---
 
-# 🔐 mTLS
+# 🤔 Domain Specific Language
 
-- mutual Transport Layer Security (TLS)
-    - TLS formerly known as SSL
-- both client and server use X. 509 digital certificates to authenticate
-- often used in Zero Trust security framework
+- A domain-specific language (DSL) is a computer language specialized in a particular application domain.
+- HTML, Regular Expressions, and more
 
 ---
 
-# 📦 Entities
+# 📦 JMeter DSL
 
-- public and private keys
-- anything encrypted with the public key can be decrypted with the private key
-- anything encrypted with the private key can be decrypted with the public key
-
----
-
-# 🙋‍♂️ How mTLS works?
-
-<center>
-<img src="/assets/mtls.png" width=500 height=500 />
-</center>
-
----
-
-# 🔐 mTLS in JMeter 
-
-- JMeter supports JKS and PKCS12 e.g. *.p12
-
-- `KeyStore Explorer` to create JKS and export to various formats
-
-- A Java KeyStore is a file format that stores a collection of cryptographic keys and certificates.
-- `JAVA_HOME/jre/lib/security/cacerts`
-- default keystore password `changeit`
-
-- in `system.properties` add `javax.net.ssl.keyStore=<JKS_filename.jks>` and `javax.net.ssl.keyStore=<JKS_filename.jks>`
+- open source initiative from Abstracta
+- JMeter-as-Code
+```java
+@Test
+public void testHelloWorld() throws IOException {
+    TestPlanStats helloWorld = testPlan(
+            threadGroup(1,1,
+                    httpSampler("https://example.com")
+                            .children(
+                                    responseAssertion().containsSubstrings("Example Domain")
+                            )
+            ),
+            jtlWriter("HelloWorld" + Instant.now().toString().replace(":","-") + ".jtl")
+    ).run();
+}
+```
 
 ---
 
-# 🙋‍♂️ What is required for PKCS12?
+# 🤔 But why?
 
-- `client.crt`
-- `client.key`
-- optionally `ca-cert`
+- JMeter used to be a developer's tool
+- After several enhancements and features, it became a tool for test engineers as well
 
 ---
 
-# ⏲ Demo
+# 👍 What problem is JMeter DSL solving?
 
-- certificates generation
-- nginx
-- python
+- making JMeter more Git friendly, developer friendly, and more productive
+- CI/CD friendly
+- extends JMeter's capabilities further
+
+---
+
+# ✅ Features
+
+- Advanced Thread Group configuration
+- Debugging
+- Reporting
+- Extractions
+- Logical Controllers
+- Converters e.g. DSL to JMX
+- Visualization
+
 
 ---
 layout: center
